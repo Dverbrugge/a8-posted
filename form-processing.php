@@ -14,17 +14,17 @@ $variable_3 = " and everywhere that Mary went the "  . $noun;
 $variable_4 = " was " . $adverb . " to " . $verb;
 
 $combined = $variable_1  .  $variable_2  .  $variable_3  .  $variable_4 ;
-print($combined);
+
 
 $to="don@mvdesigngroupinc.com";
 $subject="Madlib example";
-$message=$combined;
+$message="get your madlib";
 $message=wordwrap($message, 70, "\r\n");
-
 
 $headers = "From:don@mvdesigngroupinc.com" . "\r\n" .
  "Reply-To:don@mvdesigngroupinc.com" . "\r\n" .
  "X-Mailer:PHP/" . phpversion();
+
 
 
 mail($to, $subject, $message, $headers);
